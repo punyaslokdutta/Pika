@@ -1,211 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost Cat: Pika</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-        h1, h2 {
-            font-weight: 700;
-            color: #2c3e50;
-            line-height: 1.2;
-            margin-bottom: 0.5rem;
-        }
-        h1 {
-            font-size: 1.5rem;
-        }
-        .images {
-            display: flex;
-            overflow-x: auto;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-        }
-        .images::-webkit-scrollbar {
-            display: none;
-        }
-        .images img {
-            min-width: 85%;
-            height: auto;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            scroll-snap-align: start;
-        }
-        .cta-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            margin: 1rem auto;
-            width: 90%;
-            max-width: 400px;
-        }
-        .cta-button, .instagram-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 9999px;
-            font-size: 1rem;
-            font-weight: 700;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in-out;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            padding: 1rem 2rem;
-        }
-        .cta-button {
-            background-color: #25D366; /* WhatsApp Green */
-            color: white;
-        }
-        .instagram-button {
-            background-color: #833AB4; /* Instagram Purple */
-            color: white;
-        }
-        .cta-button:active, .instagram-button:active {
-            transform: translateY(2px);
-        }
-        .whatsapp-icon, .instagram-icon {
-            fill: white;
-            margin-right: 0.75rem;
-            width: 28px; /* Bigger size */
-            height: 28px; /* Bigger size */
-        }
-        .details-box {
-            background-color: white;
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .details-box p {
-            margin: 0.5rem 0;
-            line-height: 1.5;
-        }
-        .details-box strong {
-            color: #34495e;
-        }
-        .message-box {
-            background-color: white;
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .reward-box {
-            background-color: #ecf0f1;
-            border-radius: 1rem;
-            padding: 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .reward-box p {
-            margin: 0;
-            font-weight: 700;
-        }
-        .kannada-text {
-            font-size: 1rem;
-            margin-top: 0.5rem;
-            color: #555;
-        }
-        .spacer {
-            height: 2rem;
-        }
-        /* Mobile-specific adjustments */
-        @media (min-width: 400px) {
-          .cta-group {
-            flex-direction: row;
-            max-width: none;
-            justify-content: center;
-          }
-          .cta-button, .instagram-button {
-            width: auto;
-            flex-grow: 1;
-            max-width: 200px;
-          }
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.25rem;
-            }
-            .container {
-                padding: 0.5rem;
-            }
-            .details-box, .message-box, .reward-box {
-                padding: 1rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Have You Seen Pika? — Lost Cat near Begur Temple | ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ? — ಬೇಗೂರು ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣೆಯಾದ ಬೆಕ್ಕು</title>
+  <meta name="description" content="Pika is an orange–white indie cat, last seen around Shri Panchalinga Nageshwara Temple, Begur. Photos, maps, and quick actions to report sightings. ₹10,000 reward. | ಪಿಕಾ ಕಿತ್ತಳೆ-ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು, ಕೊನೆಯದಾಗಿ ಬೇಗೂರು ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ. ಫೋಟೋಗಳು, ನಕ್ಷೆಗಳು ಮತ್ತು ವರದಿ ಮಾಡಲು ಶೀಘ್ರ ಕ್ರಿಯೆಗಳು. ₹10,000 ಬಹುಮಾನ."/>
+  <meta property="og:title" content="Lost Cat: Pika — Begur Temple | ಕಾಣೆಯಾದ ಬೆಕ್ಕು: ಪಿಕಾ — ಬೇಗೂರು ದೇವಸ್ಥಾನ"/>
+  <meta property="og:description" content="Help find Pika (orange–white indie). Last seen near Shri Panchalinga Nageshwara Temple. Tap to view photos and maps. ₹10,000 reward. | ಪಿಕಾನನ್ನು (ಕಿತ್ತಳೆ–ಬಿಳಿ) ಹುಡುಕಲು ಸಹಾಯ ಮಾಡಿ. ಕೊನೆಯದಾಗಿ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ. ಫೋಟೋಗಳು ಮತ್ತು ನಕ್ಷೆಗಳನ್ನು ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ. ₹10,000 ಬಹುಮಾನ."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://placehold.co/1200x630/0E2D52/ffffff?text=Help+Find+Pika"/>
+  <meta name="theme-color" content="#0E2D52"/>
+
+  <!-- Fonts (no API keys used) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#F7F7F5;--ink:#1A1A1A;--muted:#666;--accent:#0E2D52;--surface:#fff;
+      --ok:#25D366;--insta:#833AB4;--group:#0EA5E9;--radius:16px;--shadow:0 8px 24px rgba(0,0,0,.08);
+      --soft:0 4px 10px rgba(0,0,0,.08);--gap:14px;--gap2:24px
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:700;line-height:1.2;margin:0 0 .5rem}
+    h1{font-size:clamp(2.2rem,4.2vw,3.2rem)}
+    h2{font-size:clamp(1.6rem,3.2vw,2.2rem)}
+    h3{font-size:clamp(1.2rem,2.4vw,1.4rem)}
+    p{margin:.75rem 0 1rem}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 16px}
+    .narrow{max-width:780px}
+    .section{padding:56px 0}
+    .shadow{box-shadow:var(--shadow)}
+    .chip{display:inline-block;padding:.35rem .7rem;border-radius:999px;background:#e9eef6;color:#2b3c55;font-weight:600;font-size:.85rem}
+    .divider{height:1px;width:120px;margin:48px auto;background:rgba(14,45,82,.2)}
+
+    /* Medium-like header */
+    .hero{padding:64px 0 24px;text-align:center}
+    .sub{color:var(--muted);font-size:1.15rem}
+
+    /* Quick actions */
+    .actions{display:flex;flex-wrap:wrap;gap:var(--gap2);justify-content:center;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:0;cursor:pointer;color:#fff;font-weight:800;box-shadow:var(--soft)}
+    .btn:active{transform:translateY(2px)}
+    .btn.ok{background:var(--ok)}
+    .btn.insta{background:var(--insta)}
+    .btn.call{background:var(--accent)}
+
+    /* Story & FAQ */
+    .card{background:var(--surface);border-radius:16px;padding:22px;box-shadow:var(--soft)}
+    .grid2{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:900px){.grid2{grid-template-columns:1fr 1fr}}
+    .faq details{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:var(--soft);margin:10px 0}
+    .faq summary{cursor:pointer;font-weight:700}
+
+    /* Photo Mosaic Section */
+    .media-mosaic{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));grid-auto-rows:minmax(180px,auto);gap:12px;margin-top:24px}
+    .media-mosaic > .media-item{width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:var(--soft);overflow:hidden}
+    .media-mosaic > .media-item > img, .media-mosaic > .media-item > video {width:100%;height:100%;object-fit:cover;display:block}
+    .media-mosaic > .wide{grid-column:span 2}
+    .media-mosaic > .tall{grid-row:span 2}
+    .media-mosaic > .big{grid-column:span 2;grid-row:span 2}
+
+    /* Maps */
+    .maps{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:860px){.maps{grid-template-columns:1fr 1fr}}
+    figure{margin:0}
+    figure img{border-radius:14px;box-shadow:var(--soft);display:block;width:100%;height:auto}
+    figcaption{color:var(--muted);font-size:.9rem;margin-top:8px}
+
+    /* Sticky floating WhatsApp */
+    .float{position:fixed;right:18px;bottom:18px;z-index:60}
+    .float a{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;font-weight:900;box-shadow:var(--shadow)}
+    .float a.wa{background:var(--ok)}
+    .float a.call{background:var(--accent)}
+    .float a.group{background:var(--group)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    footer{padding:40px 0;color:var(--muted);text-align:center}
+    .note{font-style:italic;color:var(--muted)}
+  
+    /* Owner section */
+    .owner-grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center}
+    .owner-photo img{width:100%;height:auto;border-radius:14px;box-shadow:var(--soft);object-fit:cover}
+    .owner-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    @media(max-width:860px){.owner-grid{grid-template-columns:1fr}.owner-photo{order:-1;margin-bottom:12px}}
+
+    .pika-details{margin-bottom: 2rem;}
+    .pika-details h2{margin-bottom: 1rem;}
+    .pika-details p {margin: .5rem 0;}
+    .pika-details .message p {margin-top: 1rem; font-style: italic;}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>URGENT: Have You Seen Pika, My Lost Cat?</h1>
-        <div class="kannada-text">
-            <h2>ತುರ್ತು: ನೀವು ನನ್ನ ಬೆಕ್ಕು ಪಿಕಾಳನ್ನು ನೋಡಿದ್ದೀರಾ?</h2>
-            <p>(Turtu: Nīvu nanna bekku Pikaḷannu nōḍiddīrā?)</p>
-        </div>
-
-        <div class="images">
-            <img src="https://i.postimg.cc/LXPGJr1j/Whats-App-Image-2025-09-02-at-8-08-08-PM.jpg" alt="A photo of Pika, a lost orange and white cat." onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/ffffff?text=Pika+Image+1';">
-            <img src="https://i.postimg.cc/0ycvxRYQ/Whats-App-Image-2025-09-02-at-8-07-43-PM.jpg" alt="Another photo of Pika, a lost orange and white cat." onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/ffffff?text=Pika+Image+2';">
-            <img src="https://private-user-images.githubusercontent.com/13198518/484645278-ce2ca311-5d6a-49a0-a348-1ac1666d1c37.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY4MjcyNjQsIm5iZiI6MTc1NjgyNjk2NCwicGF0aCI6Ii8xMzE5ODUxOC80ODQ2NDUyNzgtY2UyY2EzMTEtNWQ2YS00OWEwLWEzNDgtMWFjMTY2NmQxYzM3LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTAyVDE1MjkyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIwN2E3N2JhZDU3MzA1ZjY0NmJkYzI2Mjk0MjVlYTY5MGQzNzQzMTYwYTA0MGZkMzFjYjQ2YzdiYzI1MGEwOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.iXf0gKn3D3ALG9Rf3_eQ920suLbxibG99wiXE8zpYhA" alt="Pika's full body shot." onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/ffffff?text=Pika+Image+3';">
-            <img src="https://placehold.co/600x400/FF5733/ffffff?text=Pika+Image+4" alt="Pika with owner." onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/ffffff?text=Pika+Image+4';">
-        </div>
-
-        <div class="cta-group">
-            <a href="https://wa.me/7892485638?text=Hi,%20I%20think%20I%27ve%20seen%20Pika%20near%20[LOCATION]." class="cta-button" target="_blank">
-                <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.04 2.87c-5.45 0-9.87 4.42-9.87 9.87 0 1.94.55 3.76 1.51 5.31L2 22.02l4.14-1.1c1.47.8 3.16 1.25 4.9 1.25h.01c5.45 0 9.88-4.42 9.88-9.88s-4.43-9.87-9.88-9.87zm0 18.06c-1.63 0-3.15-.46-4.44-1.22l-.31-.18-3.13.82.83-3.04-.2-.32c-.8-1.3-1.24-2.81-1.24-4.41.01-4.52 3.67-8.17 8.19-8.17s8.19 3.65 8.19 8.17-3.66 8.18-8.18 8.18zm4.52-6.16c-.25-.12-.92-.46-1.06-.52-.14-.07-.29-.08-.41.08-.12.16-.46.52-.56.63-.1.12-.21.13-.39.06-.18-.08-.75-.28-1.43-.88-.53-.47-.89-1.05-1.18-1.54-.29-.48-.03-.74.07-.86.09-.11.21-.29.31-.44.09-.15.12-.26.08-.32-.04-.07-.41-.98-.56-1.33-.14-.34-.28-.29-.39-.29s-.23.01-.35.01c-.12 0-.46.06-.7.34-.24.28-.92.89-.92 2.16 0 1.27.95 2.49 1.08 2.65.13.17 1.87 2.87 4.54 4.02 1.07.45 1.93.72 2.59.91.43.12.82.1.96.06.14-.04.45-.18.82-.47.37-.29.38-.54.26-.75-.12-.2-1.08-1.68-1.24-1.97z"/></svg>
-                I Saw Pika! Tap to Send a Photo on WhatsApp<br>
-                <span class="kannada-text">ನಾನು ಪಿಕಾಳನ್ನು ನೋಡಿದ್ದೇನೆ! ಫೋಟೋ ಕಳುಹಿಸಲು ವಾಟ್ಸಾಪ್ ಕ್ಲಿಕ್ ಮಾಡಿ</span>
-            </a>
-            <a href="https://www.instagram.com/punyaslok_dutta/" class="instagram-button" target="_blank">
-                <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c2.71 0 3.05.01 4.12.06 1.07.05 1.76.22 2.45.51a4.04 4.04 0 011.45 1.45c.29.69.46 1.38.51 2.45.05 1.07.06 1.41.06 4.12s-.01 3.05-.06 4.12c-.05 1.07-.22 1.76-.51 2.45a4.04 4.04 0 01-1.45 1.45c-.69.29-1.38.46-2.45.51-1.07.05-1.41.06-4.12.06s-3.05-.01-4.12-.06c-1.07-.05-1.76-.22-2.45-.51a4.04 4.04 0 01-1.45-1.45c-.29-.69-.46-1.38-.51-2.45-.05-1.07-.06-1.41-.06-4.12s.01-3.05.06-4.12c.05-1.07.22-1.76.51-2.45a4.04 4.04 0 011.45-1.45c.69-.29 1.38-.46 2.45-.51C8.95 2.01 9.29 2 12 2zm0 2.21c-2.61 0-2.92.01-3.95.06-1.04.05-1.57.21-1.99.37-.43.16-.76.38-1.12.74s-.58.69-.74 1.12c-.16.42-.32.95-.37 1.99-.05 1.03-.06 1.34-.06 3.95s.01 2.92.06 3.95c.05 1.04.21 1.57.37 1.99.16.43.38.76.74 1.12s.69.58 1.12.74c.42.16.95.32 1.99.37 1.03.05 1.34.06 3.95.06s2.92-.01 3.95-.06c1.04-.05 1.57-.21 1.99-.37.43-.16.76-.38 1.12-.74s.58-.69.74-1.12c.16-.42.32-.95.37-1.99.05-1.03.06-1.34.06-3.95s-.01-2.92-.06-3.95c-.05-1.04-.21-1.57-.37-1.99a3.8 3.8 0 00-.74-1.12s-.69-.58-1.12-.74c-.42-.16-.95-.32-1.99-.37-1.03-.05-1.34-.06-3.95-.06zm0 2.76c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8.21c-1.77 0-3.21-1.44-3.21-3.21S10.23 8.79 12 8.79s3.21 1.44 3.21 3.21-1.44 3.21-3.21 3.21zM18.42 5.56c-.52 0-.94.42-.94.94s.42.94.94.94.94-.42.94-.94-.42-.94-.94-.94z"/></svg>
-                Instagram
-            </a>
-        </div>
-
-        <div class="details-box">
-            <h2>About Pika</h2>
-            <p><strong>Name:</strong> Pika (ಪಿಕಾ)</p>
-            <p><strong>Appearance:</strong> An orange and white cat with orange stripes on his body.</p>
-            <p class="kannada-text"><strong>ನೋಡಲು (Nōḍalu):</strong> ಕಿತ್ತಳೆ ಮತ್ತು ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು, ದೇಹದ ಮೇಲೆ ಕಿತ್ತಳೆ ಪಟ್ಟೆಗಳಿವೆ.</p>
-            <p><strong>Distinctive Features:</strong> His tail is thick and bushy, and his eyes are a striking green-yellow.</p>
-            <p class="kannada-text"><strong>ವಿಶೇಷ ಲಕ್ಷಣಗಳು (Viśēṣa lakṣaṇagaḷu):</strong> ಅವನ ಬಾಲ ದಪ್ಪ ಮತ್ತು ರೋಮಗಳಿಂದ ಕೂಡಿದೆ, ಮತ್ತು ಅವನ ಕಣ್ಣುಗಳು ಆಕರ್ಷಕ ಹಸಿರು-ಹಳದಿ ಬಣ್ಣದಲ್ಲಿವೆ.</p>
-            <p><strong>Last Seen:</strong> Tuesday, September 2, 2025 at 8:43 PM IST.</p>
-            <p class="kannada-text"><strong>ಕೊನೆಯದಾಗಿ ನೋಡಿದ್ದು (Koneyadāgi nōḍiddu):</strong> ಮಂಗಳವಾರ, ಸೆಪ್ಟೆಂಬರ್ 2, 2025 ರಂದು 8:43 PM IST ಸಮಯದಲ್ಲಿ.</p>
-            <p><strong>Last Seen Location:</strong> Near Shri Panchalinga Nageshwara Temple in Bengaluru. He may have wandered towards Begur Koppa Road.</p>
-            <p class="kannada-text"><strong>ಕೊನೆಯದಾಗಿ ನೋಡಿದ ಸ್ಥಳ (Koneyadāgi nōḍida sthaḷa):</strong> ಬೆಂಗಳೂರಿನ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ. ಅವನು ಬಹುಶಃ ಬೇಗೂರು ಕೊಪ್ಪ ರಸ್ತೆಯ ಕಡೆಗೆ ಹೋಗಿರಬಹುದು.</p>
-        </div>
-
-        <div class="message-box">
-            <h2>A Message from Pika's Owner</h2>
-            <p>Pika came into my life 8 months ago and brought so much joy during a difficult time. She is a friendly but scared soul. If you see her, please don't try to chase or catch her, as she might get scared. A quick photo or a description of where you saw her is all I need. I am constantly looking for her near the temple, and I hope she is safe and alive.</p>
-            <p class="kannada-text">ಪಿಕಾ ಎಂಟು ತಿಂಗಳ ಹಿಂದೆ ನನ್ನ ಜೀವನಕ್ಕೆ ಬಂದು ಕಷ್ಟದ ಸಮಯದಲ್ಲಿ ತುಂಬಾ ಸಂತೋಷವನ್ನು ತಂದಳು. ಅವಳು ಸ್ನೇಹಪರ ಮತ್ತು ಭಯದ ಆತ್ಮ. ನೀವು ಅವಳನ್ನು ನೋಡಿದರೆ, ದಯವಿಟ್ಟು ಅವಳನ್ನು ಹಿಂಬಾಲಿಸಲು ಅಥವಾ ಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ, ಏಕೆಂದರೆ ಅವಳು ಭಯಪಡಬಹುದು. ನೀವು ಅವಳನ್ನು ನೋಡಿದ ಸ್ಥಳದ ಒಂದು ತ್ವರಿತ ಛಾಯಾಚಿತ್ರ ಅಥವಾ ವಿವರಣೆ ನಮಗೆ ಸಾಕು. ನಾನು ನಿರಂತರವಾಗಿ ದೇವಸ್ಥಾನದ ಬಳಿ ಅವಳನ್ನು ಹುಡುಕುತ್ತಿದ್ದೇನೆ, ಮತ್ತು ಅವಳು ಸುರಕ್ಷಿತವಾಗಿ ಮತ್ತು ಜೀವಂತವಾಗಿದ್ದಾಳೆಂದು ನಾನು ಆಶಿಸುತ್ತೇನೆ.</p>
-        </div>
-
-        <div class="reward-box">
-            <p>A **&#8377;10,000** reward is offered for her safe return.</p>
-            <p class="kannada-text">ಅವಳ ಸುರಕ್ಷಿತ ಮರಳುವಿಕೆಗೆ **₹10,000** ಬಹುಮಾನ ನೀಡಲಾಗುವುದು.</p>
-        </div>
-        <div class="spacer"></div>
+  <header class="hero container narrow">
+    <span class="chip">₹10,000 reward · No questions asked<br>₹10,000 ಬಹುಮಾನ · ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಲ್ಲ</span>
+    <h1>Have You Seen Pika?<br>ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ?</h1>
+    <p class="sub">Orange–white indie cat • Last seen around <strong>Shri Panchalinga Nageshwara Temple, Begur</strong> • Likely within 200–300 m. If seen, please share a <strong>photo + location pin</strong>.<br>
+    ಕಿತ್ತಳೆ–ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು • ಬೇಗೂರಿನ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕೊನೆಯದಾಗಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ • 200–300 ಮೀ ಒಳಗೆ ಇರಬಹುದು. ನೋಡಿದರೆ, ದಯವಿಟ್ಟು ಫೋಟೋ + ಸ್ಥಳದ ಪಿನ್ ಕಳುಹಿಸಿ.</p>
+    <div class="actions">
+      <a class="btn ok" id="cta-wa" href="#">📷 Send sighting on WhatsApp<br>ಕಂಡರೆ WhatsApp ಮಾಡಿ</a>
+      <a class="btn call" href="tel:7892485638">📞 Call Owner<br>ಮಾಲೀಕರಿಗೆ ಕರೆ ಮಾಡಿ</a>
+      <a class="btn insta" href="https://www.instagram.com/punyaslok_dutta/" target="_blank" rel="noopener">📣 Follow Updates<br>ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಫಾಲೋ ಮಾಡಿ</a>
     </div>
+  </header>
+
+  <main>
+    <!-- Photo Gallery Section -->
+    <section class="section container narrow card">
+      <h2>Pika's Pictures<br>ಪಿಕಾನ ಚಿತ್ರಗಳು</h2>
+      <p>Pika is an orange–white indie cat with green-yellow eyes and a thick, bushy tail. Please note these distinctive features in her photos and videos.<br>
+      ಪಿಕಾ ಹಸಿರು-ಹಳದಿ ಕಣ್ಣುಗಳು ಮತ್ತು ದಪ್ಪ, ಪೊದೆ ಪೊದೆ ಬಾಲವನ್ನು ಹೊಂದಿರುವ ಕಿತ್ತಳೆ-ಬಿಳಿ ದೇಶಿ ಬೆಕ್ಕು. ದಯವಿಟ್ಟು ಅವಳ ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೊಗಳಲ್ಲಿ ಈ ವಿಶಿಷ್ಟ ಲಕ್ಷಣಗಳನ್ನು ಗಮನಿಸಿ.</p>
+      
+      <!-- Photo and Video Mosaic -->
+      <div class="media-mosaic">
+        <!-- Add your photos and videos here -->
+        <div class="media-item">
+          <img src="" alt="A photo of Pika." />
+        </div>
+        <div class="media-item tall">
+          <img src="https://placehold.co/400x800/FFB347/fff?text=Photo+2" alt="A portrait photo of Pika." />
+        </div>
+        <div class="media-item wide">
+          <img src="https://placehold.co/800x400/FFB347/fff?text=Photo+3" alt="A wide photo of Pika." />
+        </div>
+        <div class="media-item">
+          <img src="https://i.postimg.cc/zD43v8Y8/Whats-App-Image-2025-09-03-at-9-13-45-PM-2.jpg" alt="A photo of Pika." />
+        </div>
+        <div class="media-item wide">
+          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
+          <video autoplay muted loop playsinline>
+            <source src="https://files.catbox.moe/4nijvx.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+          <div class="media-item wide">
+          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
+          <video autoplay muted loop playsinline>
+            <source src="https://files.catbox.moe/7eva3i.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+          <div class="media-item wide">
+          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
+          <video autoplay muted loop playsinline>
+            <source src="https://files.catbox.moe/qnmypa.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+          
+        <div class="media-item tall">
+          <img src="https://placehold.co/400x800/FFB347/fff?text=Photo+5" alt="A portrait photo of Pika." />
+        </div>
+        <div class="media-item">
+          <img src="https://placehold.co/400x400/FFB347/fff?text=Photo+6" alt="A photo of Pika." />
+        </div>
+        <!-- End of your media files -->
+      </div>
+      
+      <p class="note" style="margin-top: 24px;">Note: Replace the placeholder image and video URLs with your own photos and videos of Pika.<br>
+      ಗಮನಿಸಿ: ಪ್ಲೇಸ್‌ಹೋಲ್ಡರ್ ಚಿತ್ರ ಮತ್ತು ವೀಡಿಯೊ URL ಗಳನ್ನು ಪಿಕಾನ ನಿಮ್ಮ ಸ್ವಂತ ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೊಗಳೊಂದಿಗೆ ಬದಲಾಯಿಸಿ.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About Pika Section -->
+    <section class="section container narrow card pika-details">
+        <h2>About Pika<br>ಪಿಕಾ ಬಗ್ಗೆ</h2>
+        <p><strong>Name:</strong> Pika<br>
+        <strong>ಹೆಸರು:</strong> ಪಿಕಾ</p>
+        <p><strong>Appearance:</strong> An orange and white cat with orange stripes on his body.<br>
+        <strong>ಸ್ವರೂಪ:</strong> ಕಿತ್ತಳೆ ಮತ್ತು ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು, ದೇಹದ ಮೇಲೆ ಕಿತ್ತಳೆ ಪಟ್ಟೆಗಳಿವೆ.</p>
+        <p><strong>Distinctive Features:</strong> His tail is thick and bushy, and his eyes are a striking green-yellow.<br>
+        <strong>ವಿಶಿಷ್ಟ ಲಕ್ಷಣಗಳು:</strong> ಅವನ ಬಾಲ ದಪ್ಪ ಮತ್ತು ಪೊದೆ ಪೊದೆ, ಮತ್ತು ಅವನ ಕಣ್ಣುಗಳು ಆಕರ್ಷಕ ಹಸಿರು-ಹಳದಿ ಬಣ್ಣದಲ್ಲಿವೆ.</p>
+        <p><strong>Last Seen:</strong> Tuesday, September 2, 2025 at 8:43 PM IST.<br>
+        <strong>ಕೊನೆಯದಾಗಿ ಕಾಣಿಸಿಕೊಂಡಿದ್ದು:</strong> ಮಂಗಳವಾರ, ಸೆಪ್ಟೆಂಬರ್ 2, 2025 ರಂದು ರಾತ್ರಿ 8:43 IST ಗೆ.</p>
+        <p><strong>Last Seen Location:</strong> Near Shri Panchalinga Nageshwara Temple in Bengaluru. He may have wandered towards Begur Koppa Road.<br>
+        <strong>ಕೊನೆಯದಾಗಿ ಕಾಣಿಸಿಕೊಂಡ ಸ್ಥಳ:</strong> ಬೆಂಗಳೂರಿನ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ. ಅವನು ಬೇಗೂರು ಕೊಪ್ಪ ರಸ್ತೆಯ ಕಡೆಗೆ ಹೋಗಿರಬಹುದು.</p>
+
+        <div class="message">
+            <h3>A Message from Pika's Owner<br>ಪಿಕಾನ ಮಾಲೀಕರಿಂದ ಸಂದೇಶ</h3>
+            <p>Pika came into my life 8 months ago and brought so much joy during a difficult time. She is a friendly but scared soul. If you see her, please don't try to chase or catch her, as she might get scared. A quick photo or a description of where you saw her is all I need. I am constantly looking for her near the temple, and I hope she is safe and alive.<br>
+            ಪಿಕಾ 8 ತಿಂಗಳ ಹಿಂದೆ ನನ್ನ ಜೀವನಕ್ಕೆ ಬಂದು ಕಷ್ಟದ ಸಮಯದಲ್ಲಿ ತುಂಬಾ ಸಂತೋಷವನ್ನು ತಂದಳು. ಅವಳು ಸ್ನೇಹಪರ ಆದರೆ ಭಯಭೀತ ಆತ್ಮ. ಅವಳನ್ನು ನೋಡಿದರೆ, ದಯವಿಟ್ಟು ಅವಳನ್ನು ಬೆನ್ನಟ್ಟಲು ಅಥವಾ ಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ, ಏಕೆಂದರೆ ಅವಳು ಹೆದರಬಹುದು. ನೀವು ಅವಳನ್ನು ಎಲ್ಲಿ ನೋಡಿದಿರಿ ಎಂಬುದರ ಒಂದು ತ್ವರಿತ ಫೋಟೋ ಅಥವಾ ವಿವರಣೆ ನನಗೆ ಸಾಕು. ನಾನು ದೇವಸ್ಥಾನದ ಬಳಿ ಅವಳನ್ನು ನಿರಂತರವಾಗಿ ಹುಡುಕುತ್ತಿದ್ದೇನೆ ಮತ್ತು ಅವಳು ಸುರಕ್ಷಿತವಾಗಿ ಮತ್ತು ಜೀವಂತವಾಗಿರುತ್ತಾಳೆ ಎಂದು ನಾನು ಭಾವಿಸುತ್ತೇನೆ.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section container narrow card">
+      <h2>The Core Story (90 seconds)<br>ಸಂಕ್ಷಿಪ್ತ ಕಥೆ (90 ಸೆಕೆಂಡ್)</h2>
+      <p>On <strong>31 August, ~4:00-5:00 PM</strong>, near the temple entrance, Pika slipped out of the bag, hid <strong>under a car for ~30 min</strong>, and when people tried to help by chasing, she <strong>darted back inside</strong> the temple area. She has been an <strong>indoor-only cat for 8 months</strong>, so she’s likely <strong>hiding nearby</strong> and moves quietly at night. I'm a resident near <strong>Maruti Layout, Begur</strong>; I’m searching respectfully with neighbours and shopkeepers. If spotted, please <strong>do not chase</strong> — share a photo and pin instead. Thank you for helping.<br>
+      <strong>ಆಗಸ್ಟ್ 31, ಸುಮಾರು 4:00–5:00 PM</strong> ಗೆ, ದೇವಸ್ಥಾನದ ಪ್ರವೇಶದ್ವಾರದ ಬಳಿ, ಪಿಕಾ ಬ್ಯಾಗ್‌ನಿಂದ ಜಾರಿ, ಸುಮಾರು 30 ನಿಮಿಷಗಳ ಕಾಲ ಕಾರಿನ ಕೆಳಗೆ ಅಡಗಿಕೊಂಡಳು, ಮತ್ತು ಜನರು ಬೆನ್ನಟ್ಟುವ ಮೂಲಕ ಸಹಾಯ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿದಾಗ, ಅವಳು ದೇವಸ್ಥಾನದ ಪ್ರದೇಶದೊಳಗೆ ಮತ್ತೆ ಓಡಿದಳು. ಅವಳು 8 ತಿಂಗಳಿಂದ ಮನೆಯೊಳಗೆ ಮಾತ್ರ ಇರುತ್ತಿದ್ದ ಬೆಕ್ಕು, ಆದ್ದರಿಂದ ಅವಳು ಹತ್ತಿರದಲ್ಲಿ ಅಡಗಿಕೊಂಡಿರಬಹುದು ಮತ್ತು ರಾತ್ರಿ ಹೊತ್ತು ನಿಧಾನವಾಗಿ ಚಲಿಸುತ್ತಾಳೆ. ನಾನು ಮಾರುತಿ ಲೇಔಟ್, ಬೇಗೂರು ಬಳಿ ವಾಸಿಸುತ್ತಿದ್ದೇನೆ; ನಾನು ನೆರೆಹೊರೆಯವರು ಮತ್ತು ಅಂಗಡಿಯವರೊಂದಿಗೆ ಗೌರವಯುತವಾಗಿ ಹುಡುಕುತ್ತಿದ್ದೇನೆ. ನೋಡಿದರೆ, ದಯವಿಟ್ಟು ಬೆನ್ನಟ್ಟಬೇಡಿ — ಬದಲಾಗಿ ಫೋಟೋ ಮತ್ತು ಪಿನ್ ಹಂಚಿಕೊಳ್ಳಿ. ಸಹಾಯಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Maps Section with the two screenshots (wrap each image with a Google Maps link) -->
+    <section class="section container">
+      <div class="narrow" style="text-align:center">
+        <h2>Where to Look (Map Cues)<br>ಎಲ್ಲಿ ಹುಡುಕಬೇಕು (ನಕ್ಷೆ)</h2>
+        <p class="sub">These are the two focus areas. Tap an image to open Google Maps around the temple.<br>
+        ಇವು ಎರಡು ಪ್ರಮುಖ ಪ್ರದೇಶಗಳು. ದೇವಸ್ಥಾನದ ಸುತ್ತ Google Maps ತೆರೆಯಲು ಚಿತ್ರದ ಮೇಲೆ ಟ್ಯಾಪ್ ಮಾಡಿ.</p>
+      </div>
+      <div class="maps">
+        <figure>
+          <!-- Replace src with your actual file (e.g., assets/maps-overview.png). Added as placeholder. -->
+          <a href="https://www.google.com/maps/place/Shri+Panchalinga+Nageshwara+Temple/@12.8820783,77.612435,15.13z/data=!4m6!3m5!1s0x3bae6b3494fee351:0x8ef53b5c5a3104d7!8m2!3d12.8767161!4d77.6263033!16s%2Fm%2F0pclzst?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+            <img src="https://placehold.co/400x300/e9eef6/2b3c55?text=Map+Overview" alt="Begur area overview map around the temple (blue street lines)"/>
+          </a>
+          <figcaption>Area overview — lanes around the temple and Begur Lake promenade.<br>
+          ಪ್ರದೇಶದ ಅವಲೋಕನ — ದೇವಸ್ಥಾನದ ಸುತ್ತಲಿನ ಬೀದಿಗಳು ಮತ್ತು ಬೇಗೂರು ಕೆರೆ ಜಲಾಶಯ.</figcaption>
+        </figure>
+        <figure>
+          <!-- Replace src with your actual file (e.g., assets/maps-temple-closeup.png). Added as placeholder. -->
+          <a href="https://www.google.com/maps/place/Shri+Panchalinga+Nageshwara+Temple/@12.8820783,77.612435,15.13z/data=!4m6!3m5!1s0x3bae6b3494fee351:0x8ef53b5c5a3104d7!8m2!3d12.8767161!4d77.6263033!16s%2Fm%2F0pclzst?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+            <img src="https://placehold.co/400x300/e9eef6/2b3c55?text=Temple+Close-up" alt="Temple close-up map showing entrance, inner courtyard and lanes"/>
+          </a>
+          <figcaption>Temple close‑up — entrance where Pika hid under a car; inner court where she ran in.<br>
+          ದೇವಸ್ಥಾನದ ಹತ್ತಿರ — ಪಿಕಾ ಕಾರಿನ ಕೆಳಗೆ ಅಡಗಿಕೊಂಡ ಪ್ರವೇಶದ್ವಾರ; ಅವಳು ಒಳಗೆ ಓಡಿದ ಆಂತರಿಕ ಪ್ರಾಂಗಣ.</figcaption>
+        </figure>
+      </div>
+      <p class="note narrow" style="margin-top:10px">Note: images above are placeholders — add your two map screenshots as <code>assets/maps-overview.png</code> and <code>assets/maps-temple-closeup.png</code> (or update the <code>src</code> paths).<br>
+      ಗಮನಿಸಿ: ಮೇಲಿನ ಚಿತ್ರಗಳು ಪ್ಲೇಸ್‌ಹೋಲ್ಡರ್‌ಗಳಾಗಿವೆ — ನಿಮ್ಮ ಎರಡು ನಕ್ಷೆ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು <code>assets/maps-overview.png</code> ಮತ್ತು <code>assets/maps-temple-closeup.png</code> ಎಂದು ಸೇರಿಸಿ (ಅಥವಾ <code>src</code> ಮಾರ್ಗಗಳನ್ನು ನವೀಕರಿಸಿ).</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- What locals can do + FAQ -->
+    <section class="section container grid2">
+      <div class="card">
+        <h2>How You Can Help (Fast)<br>ನೀವು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು (ಶೀಘ್ರ)</h2>
+        <ol>
+          <li><strong>If you spot her</strong>: Don’t run or shout. Take a photo from a distance and share a location pin.<br>
+          <strong>ಅವಳನ್ನು ನೋಡಿದರೆ:</strong> ಓಡಬೇಡಿ ಅಥವಾ ಕೂಗಬೇಡಿ. ದೂರದಿಂದ ಫೋಟೋ ತೆಗೆದುಕೊಂಡು ಸ್ಥಳದ ಪಿನ್ ಕಳುಹಿಸಿ.</li>
+          <li><strong>Lure, don’t chase</strong>: Place wet food/boiled chicken; crouch and speak softly.<br>
+          <strong>ಆಕರ್ಷಿಸಿ, ಬೆನ್ನಟ್ಟಬೇಡಿ:</strong> ಒದ್ದೆ ಆಹಾರ/ಬೇಯಿಸಿದ ಕೋಳಿ ಇಡಿ; ಕುಳಿತು ನಿಧಾನವಾಗಿ ಮಾತನಾಡಿ.</li>
+          <li><strong>Best time to check</strong>: 10 PM–5 AM — under parked cars, stairwells, store rooms, behind drums.<br>
+          <strong>ಪರಿಶೀಲಿಸಲು ಉತ್ತಮ ಸಮಯ:</strong> ರಾತ್ರಿ 10 ರಿಂದ ಬೆಳಿಗ್ಗೆ 5 ರವರೆಗೆ — ನಿಲ್ಲಿಸಿದ ಕಾರುಗಳ ಕೆಳಗೆ, ಮೆಟ್ಟಿಲುಗಳ ಮೇಲೆ, ಸ್ಟೋರ್ ರೂಮ್‌ಗಳಲ್ಲಿ, ಡ್ರಮ್‌ಗಳ ಹಿಂದೆ.</li>
+          <li><strong>If she slips inside</strong>: Close gates/doors calmly, keep water and food, then message/call.<br>
+          <strong>ಒಳಗೆ ನುಸುಳಿದರೆ:</strong> ಶಾಂತವಾಗಿ ಗೇಟ್‌ಗಳು/ಬಾಗಿಲುಗಳನ್ನು ಮುಚ್ಚಿ, ನೀರು ಮತ್ತು ಆಹಾರ ಇರಿಸಿ, ನಂತರ ಮೆಸೇಜ್/ಕರೆ ಮಾಡಿ.</li>
+        </ol>
+      </div>
+      <div class="card faq">
+        <h2>Local FAQ<br>ಸ್ಥಳೀಯ FAQ</h2>
+        <details open>
+          <summary>When and where exactly was she last seen?<br>ಅವಳು ಕೊನೆಯದಾಗಿ ಯಾವಾಗ ಮತ್ತು ಎಲ್ಲಿ ಕಾಣಿಸಿಕೊಂಡಳು?</summary>
+          <p>31 Aug ~4:00–5:00 PM at the temple entrance → hid under a car ~30 min → ran back inside when chased.<br>
+          ಆಗಸ್ಟ್ 31 ರಂದು ಸಂಜೆ 4:00–5:00 ಕ್ಕೆ ದೇವಸ್ಥಾನದ ಪ್ರವೇಶದ್ವಾರದಲ್ಲಿ → ಸುಮಾರು 30 ನಿಮಿಷ ಕಾರಿನ ಕೆಳಗೆ ಅಡಗಿಕೊಂಡಳು → ಬೆನ್ನಟ್ಟಿದಾಗ ಮತ್ತೆ ಒಳಗೆ ಓಡಿದಳು.</p>
+        </details>
+        <details>
+          <summary>How far could she be now?<br>ಅವಳು ಈಗ ಎಷ್ಟು ದೂರ ಇರಬಹುದು?</summary>
+          <p>Likely within 200–300 m. Indoor cats under stress tend to hide close for days.<br>
+          ಸುಮಾರು 200-300 ಮೀ ಒಳಗೆ ಇರಬಹುದು. ಒತ್ತಡದಲ್ಲಿರುವ ಮನೆಯ ಬೆಕ್ಕುಗಳು ದಿನಗಳವರೆಗೆ ಹತ್ತಿರದಲ್ಲಿ ಅಡಗಿಕೊಳ್ಳುತ್ತವೆ.</p>
+        </details>
+        <details>
+          <summary>Reward?<br>ಬಹುಮಾನ?</summary>
+          <p><strong>₹10,000</strong> on safe return, no questions asked.<br>
+          ಸುರಕ್ಷಿತವಾಗಿ ಹಿಂತಿರುಗಿದರೆ <strong>₹10,000</strong>, ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಲ್ಲ.</p>
+        </details>
+        <details>
+          <summary>What should I send?<br>ನಾನು ಏನು ಕಳುಹಿಸಬೇಕು?</summary>
+          <p>A clear <strong>photo</strong> and a <strong>Google Maps pin</strong> or shop/house reference. Optional: a short clip if she is calm.<br>
+          ಒಂದು ಸ್ಪಷ್ಟ <strong>ಫೋಟೋ</strong> ಮತ್ತು <strong>Google Maps ಪಿನ್</strong> ಅಥವಾ ಅಂಗಡಿ/ಮನೆಯ ಉಲ್ಲೇಖ. ಅವಳು ಶಾಂತವಾಗಿದ್ದರೆ ಒಂದು ಚಿಕ್ಕ ವಿಡಿಯೋ ಕೂಡ ಕಳುಹಿಸಬಹುದು.</p>
+        </details>
+      </div>
+    </section>
+      
+    <!-- About the Owner -->
+    <section id="about-owner" class="section container narrow card">
+      <h2>About the Owner<br>ಮಾಲೀಕರ ಬಗ್ಗೆ</h2>
+      <div class="owner-grid">
+        <div class="owner-text">
+          <p>Hi, I’m <strong>Punyaslok (Punya) Dutta</strong> — a <em>product tinkerer</em>, <em>software developer</em>, and <em>writer</em>. Day to day, I focus on building products and financial solutions used worldwide. I also run <a href="https://sundayforpaws.com" target="_blank" rel="noopener">SundayForPaws.com</a>.<br>
+          ನಮಸ್ಕಾರ, ನಾನು <strong>ಪುಣ್ಯಶ್ಲೋಕ (ಪುಣ್ಯ) ದತ್ತ</strong> — ಒಬ್ಬ <em>ಉತ್ಪನ್ನದ ಚಿಂತಕ</em>, <em>ಸಾಫ್ಟ್‌ವೇರ್ ಡೆವಲಪರ್</em>, ಮತ್ತು <em>ಬರಹಗಾರ</em>. ಪ್ರತಿದಿನ, ನಾನು ವಿಶ್ವಾದ್ಯಂತ ಬಳಸುವ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಹಣಕಾಸು ಪರಿಹಾರಗಳನ್ನು ನಿರ್ಮಿಸುವುದರ ಮೇಲೆ ಗಮನ ಹರಿಸುತ್ತೇನೆ. ನಾನು <a href="https://sundayforpaws.com" target="_blank" rel="noopener">SundayForPaws.com</a> ಅನ್ನು ಸಹ ನಡೆಸುತ್ತೇನೆ.</p>
+          <p>I’m a resident near Maruti Layout (Begur) and I’m coordinating the search respectfully with neighbours, shopkeepers, and temple visitors. If you’d like updates or to help on rounds, please ping me.<br>
+          ನಾನು ಮಾರುತಿ ಲೇಔಟ್ (ಬೇಗೂರು) ಬಳಿ ವಾಸಿಸುತ್ತಿದ್ದೇನೆ ಮತ್ತು ನೆರೆಹೊರೆಯವರು, ಅಂಗಡಿಯವರು, ಮತ್ತು ದೇವಸ್ಥಾನದ ಭಕ್ತರೊಂದಿಗೆ ಗೌರವಯುತವಾಗಿ ಹುಡುಕಾಟವನ್ನು ಸಂಯೋಜಿಸುತ್ತಿದ್ದೇನೆ. ನಿಮಗೆ ಅಪ್‌ಡೇಟ್‌ಗಳು ಬೇಕಾದರೆ ಅಥವಾ ಸುತ್ತಾಡಲು ಸಹಾಯ ಮಾಡಲು ಬಯಸಿದರೆ, ದಯವಿಟ್ಟು ನನಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ.</p>
+          <div class="owner-badges">
+            <span class="chip">Product Tinkerer<br>ಉತ್ಪನ್ನದ ಚಿಂತಕ</span>
+            <span class="chip">Software Developer<br>ಸಾಫ್ಟ್‌ವೇರ್ ಡೆವಲಪರ್</span>
+            <span class="chip">Writer<br>ಬರಹಗಾರ</span>
+            <span class="chip">SundayForPaws</span>
+          </div>
+        </div>
+        <div class="owner-photo">
+          <img src="https://placehold.co/320x320/e9eef6/2b3c55?text=Owner+Photo" alt="Punyaslok Dutta — owner of Pika (product tinkerer, software developer & writer)">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="float" role="navigation" aria-label="Quick contact">
+    <a id="float-group" class="group" href="#" title="Join the search group">👥<span class="sr-only">Join the search<br>ಹುಡುಕಾಟಕ್ಕೆ ಸೇರಿಕೊಳ್ಳಿ</span></a>
+    <a id="float-wa" class="wa" href="#" title="WhatsApp the owner">WA<span class="sr-only">WhatsApp the owner<br>ಮಾಲೀಕರಿಗೆ WhatsApp ಮಾಡಿ</span></a>
+    <a id="float-call" class="call" href="tel:7892485638" title="Call the owner">☎︎<span class="sr-only">Call the owner<br>ಮಾಲೀಕರಿಗೆ ಕರೆ ಮಾಡಿ</span></a>
+  </div>
+
+  <footer>
+    <div class="container narrow">
+      <p>Owner: <strong>Punya Dutta</strong> · WhatsApp/Phone: <a href="tel:7892485638">78924 85638</a><br>
+      ಮಾಲೀಕರು: <strong>ಪುಣ್ಯ ದತ್ತ</strong> · WhatsApp/ಫೋನ್: <a href="tel:7892485638">78924 85638</a></p>
+      <p>Page last updated: <span id="lastUpdated"></span> <button id="refreshBtn">Refresh<br>ನವೀಕರಿಸಿ</button></p>
+      <p class="note">All content solely for the purpose of locating Pika. Please avoid putting posters on heritage/private property without consent.<br>
+      ಎಲ್ಲಾ ವಿಷಯವು ಪಿಕಾನನ್ನು ಪತ್ತೆಹಚ್ಚುವ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ದಯವಿಟ್ಟು ಪರಂಪರೆ/ಖಾಸಗಿ ಆಸ್ತಿಗಳ ಮೇಲೆ ಒಪ್ಪಿಗೆ ಇಲ್ಲದೆ ಪೋಸ್ಟರ್‌ಗಳನ್ನು ಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿ.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // --- Site config ---
+        const OWNER_PHONE = "7892485638";
+        const WA_URL = `https://wa.me/${OWNER_PHONE}?text=`;
+        const WA_GROUP_URL = "https://chat.whatsapp.com/ENVJ2tcdTvjIGUu4oV2h6R?mode=ems_copy_c";
+
+        // --- Helpers ---
+        const $ = (s,el=document)=>el.querySelector(s);
+        const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+        const updateTimestamp = () => {
+          $('#lastUpdated').textContent = new Date().toLocaleString('en-IN');
+        };
+
+        // WhatsApp CTAs
+        const waTemplate = encodeURIComponent("Hi, I think I saw Pika near [pin/address]. Photo attached. | ನಮಸ್ಕಾರ, ನನಗೆ ಪಿಕಾ [ಪಿನ್/ವಿಳಾಸ] ಬಳಿ ಕಂಡಳು. ಫೋಟೋ ಲಗತ್ತಿಸಲಾಗಿದೆ.");
+        $('#cta-wa').href = WA_URL + waTemplate;
+        $('#float-wa').href = WA_URL + waTemplate;
+        $('#float-group').href = WA_GROUP_URL;
+
+        // Initial timestamp on load
+        updateTimestamp();
+        // Add event listener to the refresh button
+        $('#refreshBtn').addEventListener('click', updateTimestamp);
+    });
+  </script>
 </body>
 </html>
