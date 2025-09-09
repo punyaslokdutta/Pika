@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Have You Seen Pika? — Lost Cat near Begur Temple | ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ? — ಬೇಗೂರು ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣೆಯಾದ ಬೆಕ್ಕು</title>
+  <title>Have You Seen Pika? (My Lost Cat) — Lost Cat near Begur Temple | ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ? — ಬೇಗೂರು ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣೆಯಾದ ಬೆಕ್ಕು</title>
   <meta name="description" content="Pika is an orange–white indie cat, last seen around Shri Panchalinga Nageshwara Temple, Begur. Photos, maps, and quick actions to report sightings. ₹10,000 reward. | ಪಿಕಾ ಕಿತ್ತಳೆ-ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು, ಕೊನೆಯದಾಗಿ ಬೇಗೂರು ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ. ಫೋಟೋಗಳು, ನಕ್ಷೆಗಳು ಮತ್ತು ವರದಿ ಮಾಡಲು ಶೀಘ್ರ ಕ್ರಿಯೆಗಳು. ₹10,000 ಬಹುಮಾನ."/>
   <meta property="og:title" content="Lost Cat: Pika — Begur Temple | ಕಾಣೆಯಾದ ಬೆಕ್ಕು: ಪಿಕಾ — ಬೇಗೂರು ದೇವಸ್ಥಾನ"/>
   <meta property="og:description" content="Help find Pika (orange–white indie). Last seen near Shri Panchalinga Nageshwara Temple. Tap to view photos and maps. ₹10,000 reward. | ಪಿಕಾನನ್ನು (ಕಿತ್ತಳೆ–ಬಿಳಿ) ಹುಡುಕಲು ಸಹಾಯ ಮಾಡಿ. ಕೊನೆಯದಾಗಿ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ. ಫೋಟೋಗಳು ಮತ್ತು ನಕ್ಷೆಗಳನ್ನು ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ. ₹10,000 ಬಹುಮಾನ."/>
@@ -74,11 +74,12 @@
 
     /* Sticky floating WhatsApp */
     .float{position:fixed;right:18px;bottom:18px;z-index:60}
-    .float a{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;font-weight:900;box-shadow:var(--shadow)}
+    .float a{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;border:0;cursor:pointer;color:#fff;font-weight:900;box-shadow:var(--shadow);text-align: center;line-height:1.2rem;font-size:0.8rem;}
     .float a.wa{background:var(--ok)}
     .float a.call{background:var(--accent)}
-    .float a.group{background:var(--group)}
+    .float a.group{background:var(--group); padding: 5px; width: auto; height: auto; border-radius: 999px; padding: 10px 14px;}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .svg-icon { width: 24px; height: 24px; }
 
     footer{padding:40px 0;color:var(--muted);text-align:center}
     .note{font-style:italic;color:var(--muted)}
@@ -98,11 +99,21 @@
 <body>
   <header class="hero container narrow">
     <span class="chip">₹10,000 reward · No questions asked<br>₹10,000 ಬಹುಮಾನ · ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಲ್ಲ</span>
-    <h1>Have You Seen Pika?<br>ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ?</h1>
+    <h1>Have You Seen Pika? (My Lost Cat)<br>ಪಿಕಾನನ್ನು ನೋಡಿದ್ದೀರಾ?</h1>
     <p class="sub">Orange–white indie cat • Last seen around <strong>Shri Panchalinga Nageshwara Temple, Begur</strong> • Likely within 200–300 m. If seen, please share a <strong>photo + location pin</strong>.<br>
     ಕಿತ್ತಳೆ–ಬಿಳಿ ಬಣ್ಣದ ಬೆಕ್ಕು • ಬೇಗೂರಿನ ಶ್ರೀ ಪಂಚಲಿಂಗ ನಾಗೇಶ್ವರ ದೇವಸ್ಥಾನದ ಬಳಿ ಕೊನೆಯದಾಗಿ ಕಾಣಿಸಿಕೊಂಡಿದೆ • 200–300 ಮೀ ಒಳಗೆ ಇರಬಹುದು. ನೋಡಿದರೆ, ದಯವಿಟ್ಟು ಫೋಟೋ + ಸ್ಥಳದ ಪಿನ್ ಕಳುಹಿಸಿ.</p>
     <div class="actions">
-      <a class="btn ok" id="cta-wa" href="#">📷 Send sighting on WhatsApp<br>ಕಂಡರೆ WhatsApp ಮಾಡಿ</a>
+      <!-- Updated the top WhatsApp button with the SVG icon -->
+      <a class="btn ok" id="cta-wa" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve" class="svg-icon">
+          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+            <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(42,181,64); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+            <path d="M 16.138 44.738 c -0.002 5.106 1.332 10.091 3.869 14.485 l -4.112 15.013 l 15.365 -4.029 c 4.233 2.309 8.999 3.525 13.85 3.527 h 0.012 c 15.973 0 28.976 -12.999 28.983 -28.974 c 0.003 -7.742 -3.01 -15.022 -8.481 -20.498 c -5.472 -5.476 -12.749 -8.494 -20.502 -8.497 C 29.146 15.765 16.145 28.762 16.138 44.738 M 25.288 58.466 l -0.574 -0.911 c -2.412 -3.834 -3.685 -8.266 -3.683 -12.816 c 0.005 -13.278 10.811 -24.081 24.099 -24.081 c 6.435 0.003 12.482 2.511 17.031 7.062 c 4.548 4.552 7.051 10.603 7.05 17.037 C 69.205 58.036 58.399 68.84 45.121 68.84 h -0.009 c -4.323 -0.003 -8.563 -1.163 -12.261 -3.357 l -0.88 -0.522 l -9.118 2.391 L 25.288 58.466 z M 45.122 73.734 L 45.122 73.734 L 45.122 73.734 C 45.122 73.734 45.121 73.734 45.122 73.734" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+            <path d="M 37.878 32.624 c -0.543 -1.206 -1.113 -1.23 -1.63 -1.251 c -0.422 -0.018 -0.905 -0.017 -1.388 -0.017 c -0.483 0 -1.268 0.181 -1.931 0.906 c -0.664 0.725 -2.535 2.477 -2.535 6.039 c 0 3.563 2.595 7.006 2.957 7.49 c 0.362 0.483 5.01 8.028 12.37 10.931 c 6.118 2.412 7.362 1.933 8.69 1.812 c 1.328 -0.121 4.285 -1.751 4.888 -3.442 c 0.604 -1.691 0.604 -3.14 0.423 -3.443 c -0.181 -0.302 -0.664 -0.483 -1.388 -0.845 c -0.724 -0.362 -4.285 -2.114 -4.948 -2.356 c -0.664 -0.241 -1.147 -0.362 -1.63 0.363 c -0.483 0.724 -1.87 2.355 -2.292 2.838 c -0.422 0.484 -0.845 0.544 -1.569 0.182 c -0.724 -0.363 -3.057 -1.127 -5.824 -3.594 c -2.153 -1.92 -3.606 -4.29 -4.029 -5.015 c -0.422 -0.724 -0.045 -1.116 0.318 -1.477 c 0.325 -0.324 0.724 -0.846 1.087 -1.268 c 0.361 -0.423 0.482 -0.725 0.723 -1.208 c 0.242 -0.483 0.121 -0.906 -0.06 -1.269 C 39.929 37.637 38.522 34.056 37.878 32.624" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+          </g>
+        </svg>
+        Send sighting on WhatsApp<br>ಕಂಡರೆ WhatsApp ಮಾಡಿ
+      </a>
       <a class="btn call" href="tel:7892485638">📞 Call Owner<br>ಮಾಲೀಕರಿಗೆ ಕರೆ ಮಾಡಿ</a>
       <a class="btn insta" href="https://www.instagram.com/punyaslok_dutta/" target="_blank" rel="noopener">📣 Follow Updates<br>ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಫಾಲೋ ಮಾಡಿ</a>
     </div>
@@ -117,12 +128,12 @@
       
       <!-- Photo and Video Mosaic -->
       <div class="media-mosaic">
-        <!-- Add your photos and videos here -->
+        <!-- The user's image, video, and placeholder links are now in place -->
         <div class="media-item">
-          <img src="" alt="A photo of Pika." />
+          <img src="https://i.postimg.cc/zD43v8Y8/Whats-App-Image-2025-09-03-at-9-13-45-PM-2.jpg" alt="A photo of Pika." />
         </div>
         <div class="media-item tall">
-          <img src="https://placehold.co/400x800/FFB347/fff?text=Photo+2" alt="A portrait photo of Pika." />
+          <img src="https://i.postimg.cc/7Z0Hf2MN/Whats-App-Image-2025-09-02-at-8-29-50-PM.jpg" alt="A portrait photo of Pika." />
         </div>
         <div class="media-item wide">
           <img src="https://placehold.co/800x400/FFB347/fff?text=Photo+3" alt="A wide photo of Pika." />
@@ -131,22 +142,18 @@
           <img src="https://i.postimg.cc/zD43v8Y8/Whats-App-Image-2025-09-03-at-9-13-45-PM-2.jpg" alt="A photo of Pika." />
         </div>
         <div class="media-item wide">
-          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
           <video autoplay muted loop playsinline>
             <source src="https://files.catbox.moe/4nijvx.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
           <div class="media-item wide">
-          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
           <video autoplay muted loop playsinline>
             <source src="https://files.catbox.moe/7eva3i.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-
           <div class="media-item wide">
-          <!-- Note: This is a placeholder video. Replace the 'src' with a video of Pika. -->
           <video autoplay muted loop playsinline>
             <source src="https://files.catbox.moe/qnmypa.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -157,7 +164,7 @@
           <img src="https://placehold.co/400x800/FFB347/fff?text=Photo+5" alt="A portrait photo of Pika." />
         </div>
         <div class="media-item">
-          <img src="https://placehold.co/400x400/FFB347/fff?text=Photo+6" alt="A photo of Pika." />
+          <img src="https://i.postimg.cc/XJT1Gpgw/Whats-App-Image-2025-09-09-at-2-54-53-PM.jpg" alt="A photo of Pika." />
         </div>
         <!-- End of your media files -->
       </div>
@@ -210,7 +217,7 @@
         <figure>
           <!-- Replace src with your actual file (e.g., assets/maps-overview.png). Added as placeholder. -->
           <a href="https://www.google.com/maps/place/Shri+Panchalinga+Nageshwara+Temple/@12.8820783,77.612435,15.13z/data=!4m6!3m5!1s0x3bae6b3494fee351:0x8ef53b5c5a3104d7!8m2!3d12.8767161!4d77.6263033!16s%2Fm%2F0pclzst?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-            <img src="https://placehold.co/400x300/e9eef6/2b3c55?text=Map+Overview" alt="Begur area overview map around the temple (blue street lines)"/>
+            <img src="https://i.postimg.cc/hPvSnY5T/Whats-App-Image-2025-09-09-at-5-14-12-PM.jpg" alt="Begur area overview map around the temple (blue street lines)"/>
           </a>
           <figcaption>Area overview — lanes around the temple and Begur Lake promenade.<br>
           ಪ್ರದೇಶದ ಅವಲೋಕನ — ದೇವಸ್ಥಾನದ ಸುತ್ತಲಿನ ಬೀದಿಗಳು ಮತ್ತು ಬೇಗೂರು ಕೆರೆ ಜಲಾಶಯ.</figcaption>
@@ -218,7 +225,7 @@
         <figure>
           <!-- Replace src with your actual file (e.g., assets/maps-temple-closeup.png). Added as placeholder. -->
           <a href="https://www.google.com/maps/place/Shri+Panchalinga+Nageshwara+Temple/@12.8820783,77.612435,15.13z/data=!4m6!3m5!1s0x3bae6b3494fee351:0x8ef53b5c5a3104d7!8m2!3d12.8767161!4d77.6263033!16s%2Fm%2F0pclzst?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-            <img src="https://placehold.co/400x300/e9eef6/2b3c55?text=Temple+Close-up" alt="Temple close-up map showing entrance, inner courtyard and lanes"/>
+            <img src="https://i.postimg.cc/02CKrhkQ/Whats-App-Image-2025-09-02-at-8-07-42-PM-1.jpg" alt="Temple close-up map showing entrance, inner courtyard and lanes"/>
           </a>
           <figcaption>Temple close‑up — entrance where Pika hid under a car; inner court where she ran in.<br>
           ದೇವಸ್ಥಾನದ ಹತ್ತಿರ — ಪಿಕಾ ಕಾರಿನ ಕೆಳಗೆ ಅಡಗಿಕೊಂಡ ಪ್ರವೇಶದ್ವಾರ; ಅವಳು ಒಳಗೆ ಓಡಿದ ಆಂತರಿಕ ಪ್ರಾಂಗಣ.</figcaption>
@@ -275,7 +282,7 @@
       <h2>About the Owner<br>ಮಾಲೀಕರ ಬಗ್ಗೆ</h2>
       <div class="owner-grid">
         <div class="owner-text">
-          <p>Hi, I’m <strong>Punyaslok (Punya) Dutta</strong> — a <em>product tinkerer</em>, <em>software developer</em>, and <em>writer</em>. Day to day, I focus on building products and financial solutions used worldwide. I also run <a href="https://sundayforpaws.com" target="_blank" rel="noopener">SundayForPaws.com</a>.<br>
+          <p>Hi, I’m <strong>Punyaslok Dutta</strong> — a <em>product tinkerer</em>, <em>software developer</em>, and <em>writer</em>. Day to day, I focus on building products and financial solutions used worldwide. I also run <a href="https://sundayforpaws.com" target="_blank" rel="noopener">SundayForPaws.com</a>.<br>
           ನಮಸ್ಕಾರ, ನಾನು <strong>ಪುಣ್ಯಶ್ಲೋಕ (ಪುಣ್ಯ) ದತ್ತ</strong> — ಒಬ್ಬ <em>ಉತ್ಪನ್ನದ ಚಿಂತಕ</em>, <em>ಸಾಫ್ಟ್‌ವೇರ್ ಡೆವಲಪರ್</em>, ಮತ್ತು <em>ಬರಹಗಾರ</em>. ಪ್ರತಿದಿನ, ನಾನು ವಿಶ್ವಾದ್ಯಂತ ಬಳಸುವ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಹಣಕಾಸು ಪರಿಹಾರಗಳನ್ನು ನಿರ್ಮಿಸುವುದರ ಮೇಲೆ ಗಮನ ಹರಿಸುತ್ತೇನೆ. ನಾನು <a href="https://sundayforpaws.com" target="_blank" rel="noopener">SundayForPaws.com</a> ಅನ್ನು ಸಹ ನಡೆಸುತ್ತೇನೆ.</p>
           <p>I’m a resident near Maruti Layout (Begur) and I’m coordinating the search respectfully with neighbours, shopkeepers, and temple visitors. If you’d like updates or to help on rounds, please ping me.<br>
           ನಾನು ಮಾರುತಿ ಲೇಔಟ್ (ಬೇಗೂರು) ಬಳಿ ವಾಸಿಸುತ್ತಿದ್ದೇನೆ ಮತ್ತು ನೆರೆಹೊರೆಯವರು, ಅಂಗಡಿಯವರು, ಮತ್ತು ದೇವಸ್ಥಾನದ ಭಕ್ತರೊಂದಿಗೆ ಗೌರವಯುತವಾಗಿ ಹುಡುಕಾಟವನ್ನು ಸಂಯೋಜಿಸುತ್ತಿದ್ದೇನೆ. ನಿಮಗೆ ಅಪ್‌ಡೇಟ್‌ಗಳು ಬೇಕಾದರೆ ಅಥವಾ ಸುತ್ತಾಡಲು ಸಹಾಯ ಮಾಡಲು ಬಯಸಿದರೆ, ದಯವಿಟ್ಟು ನನಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ.</p>
@@ -295,14 +302,27 @@
   </main>
 
   <div class="float" role="navigation" aria-label="Quick contact">
-    <a id="float-group" class="group" href="#" title="Join the search group">👥<span class="sr-only">Join the search<br>ಹುಡುಕಾಟಕ್ಕೆ ಸೇರಿಕೊಳ್ಳಿ</span></a>
-    <a id="float-wa" class="wa" href="#" title="WhatsApp the owner">WA<span class="sr-only">WhatsApp the owner<br>ಮಾಲೀಕರಿಗೆ WhatsApp ಮಾಡಿ</span></a>
+    <!-- Updated the floating 'Join the search' button with text only -->
+    <a id="float-group" class="group" href="#" title="Join the search group">
+      Join the search<br>
+    </a>
+    <!-- Updated the floating 'WhatsApp' button with the SVG icon -->
+    <a id="float-wa" class="wa" href="#" title="WhatsApp the owner">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve" class="svg-icon">
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+          <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(42,181,64); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+          <path d="M 16.138 44.738 c -0.002 5.106 1.332 10.091 3.869 14.485 l -4.112 15.013 l 15.365 -4.029 c 4.233 2.309 8.999 3.525 13.85 3.527 h 0.012 c 15.973 0 28.976 -12.999 28.983 -28.974 c 0.003 -7.742 -3.01 -15.022 -8.481 -20.498 c -5.472 -5.476 -12.749 -8.494 -20.502 -8.497 C 29.146 15.765 16.145 28.762 16.138 44.738 M 25.288 58.466 l -0.574 -0.911 c -2.412 -3.834 -3.685 -8.266 -3.683 -12.816 c 0.005 -13.278 10.811 -24.081 24.099 -24.081 c 6.435 0.003 12.482 2.511 17.031 7.062 c 4.548 4.552 7.051 10.603 7.05 17.037 C 69.205 58.036 58.399 68.84 45.121 68.84 h -0.009 c -4.323 -0.003 -8.563 -1.163 -12.261 -3.357 l -0.88 -0.522 l -9.118 2.391 L 25.288 58.466 z M 45.122 73.734 L 45.122 73.734 L 45.122 73.734 C 45.122 73.734 45.121 73.734 45.122 73.734" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+          <path d="M 37.878 32.624 c -0.543 -1.206 -1.113 -1.23 -1.63 -1.251 c -0.422 -0.018 -0.905 -0.017 -1.388 -0.017 c -0.483 0 -1.268 0.181 -1.931 0.906 c -0.664 0.725 -2.535 2.477 -2.535 6.039 c 0 3.563 2.595 7.006 2.957 7.49 c 0.362 0.483 5.01 8.028 12.37 10.931 c 6.118 2.412 7.362 1.933 8.69 1.812 c 1.328 -0.121 4.285 -1.751 4.888 -3.442 c 0.604 -1.691 0.604 -3.14 0.423 -3.443 c -0.181 -0.302 -0.664 -0.483 -1.388 -0.845 c -0.724 -0.362 -4.285 -2.114 -4.948 -2.356 c -0.664 -0.241 -1.147 -0.362 -1.63 0.363 c -0.483 0.724 -1.87 2.355 -2.292 2.838 c -0.422 0.484 -0.845 0.544 -1.569 0.182 c -0.724 -0.363 -3.057 -1.127 -5.824 -3.594 c -2.153 -1.92 -3.606 -4.29 -4.029 -5.015 c -0.422 -0.724 -0.045 -1.116 0.318 -1.477 c 0.325 -0.324 0.724 -0.846 1.087 -1.268 c 0.361 -0.423 0.482 -0.725 0.723 -1.208 c 0.242 -0.483 0.121 -0.906 -0.06 -1.269 C 39.929 37.637 38.522 34.056 37.878 32.624" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+        </g>
+      </svg>
+      <span class="sr-only">WhatsApp the owner<br>ಮಾಲೀಕರಿಗೆ WhatsApp ಮಾಡಿ</span>
+    </a>
     <a id="float-call" class="call" href="tel:7892485638" title="Call the owner">☎︎<span class="sr-only">Call the owner<br>ಮಾಲೀಕರಿಗೆ ಕರೆ ಮಾಡಿ</span></a>
   </div>
 
   <footer>
     <div class="container narrow">
-      <p>Owner: <strong>Punya Dutta</strong> · WhatsApp/Phone: <a href="tel:7892485638">78924 85638</a><br>
+      <p>Owner: <strong>Punyaslok Dutta</strong> · WhatsApp/Phone: <a href="tel:7892485638">78924 85638</a><br>
       ಮಾಲೀಕರು: <strong>ಪುಣ್ಯ ದತ್ತ</strong> · WhatsApp/ಫೋನ್: <a href="tel:7892485638">78924 85638</a></p>
       <p>Page last updated: <span id="lastUpdated"></span> <button id="refreshBtn">Refresh<br>ನವೀಕರಿಸಿ</button></p>
       <p class="note">All content solely for the purpose of locating Pika. Please avoid putting posters on heritage/private property without consent.<br>
